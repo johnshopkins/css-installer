@@ -9,7 +9,8 @@ class CssInstallerInstaller extends LibraryInstaller
 {
   public function getPackageBasePath(PackageInterface $package)
   {
-    return 'src/assets/css/lib/' . $package->getPrettyName();
+    $name = str_replace("johnshopkins/", "", $package->getPrettyName());
+    return 'src/assets/css/lib/' . $name;
   }
 
   public function supports($packageType)
