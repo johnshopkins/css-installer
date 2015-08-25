@@ -1,0 +1,13 @@
+{
+    "name": "johnshopkins/css-installer",
+    "description": "Composer custom installer for CSS libraries.",
+    "type": "composer-plugin",
+    "extra": {
+      "class": "CssInstaller\\Composer\\CssInstallerPlugin"
+    },
+    "autoload": {
+      "psr-4" : {
+        "CssInstaller\\" : ["src/"]
+      }
+    }
+}
