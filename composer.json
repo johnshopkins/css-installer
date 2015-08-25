@@ -1,13 +1,16 @@
 {
-    "name": "johnshopkins/css-installer",
-    "description": "Composer custom installer for CSS libraries.",
-    "type": "composer-plugin",
-    "extra": {
-      "class": "CssInstaller\\Composer\\CssInstallerPlugin"
-    },
-    "autoload": {
-      "psr-4" : {
-        "CssInstaller\\" : ["src/"]
-      }
+  "name": "johnshopkins/css-installer",
+  "description": "Composer custom installer for CSS libraries.",
+  "type": "composer-plugin",
+  "extra": {
+    "class": "CssInstaller\\Composer\\CssInstallerPlugin"
+  },
+  "autoload": {
+    "psr-4" : {
+      "CssInstaller\\" : ["src/"]
     }
+  },
+  "require": {
+    "composer-plugin-api": "1.0.0"
+  }
 }
