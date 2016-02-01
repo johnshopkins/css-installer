@@ -7,7 +7,7 @@ use \Composer\Installer\LibraryInstaller;
 
 class CssInstallerInstaller extends LibraryInstaller
 {
-  public function getPackageBasePath(PackageInterface $package)
+  public function getInstallPath(PackageInterface $package)
   {
     $name = str_replace("johnshopkins/", "", $package->getPrettyName());
     return 'src/assets/css/lib/' . $name;
